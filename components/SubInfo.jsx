@@ -67,12 +67,13 @@ export const EndDate = () => {
           fontSize: SIZES.small,
           color: COLORS.primary,
         }}
-      >
+        >
         Ending in
       </Text>
       <Text
         style={{
           fontFamily: FONTS.bold,
+          fontWeight: 'bold',
           fontSize: SIZES.medium,
           color: COLORS.primary,
         }}

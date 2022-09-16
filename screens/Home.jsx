@@ -1,11 +1,16 @@
 import { useState } from 'react';
-import { View, SafeArea, FlatList, Text } from 'react-native';
+import { View, SafeAreaView, FlatList, Text } from 'react-native';
+
+import { COLORS, NFTData } from '../constants';
+import { FocusedStatusBar, HomeHeader, NFTCard } from '../components';
 
 const Home = () => {
-  const [ count, setCount ] = useState(0);
+  
   return (
-    <Text>Home</Text>
+    <SafeAreaView style={{flex: 1}}>
+      <FocusedStatusBar background={COLORS.primary} />
+    </SafeAreaView>
   )
 }
 
-export default Home
+export default Home;

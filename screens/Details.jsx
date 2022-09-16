@@ -1,4 +1,4 @@
-import { Text } from 'react-native';
+import { View, Text, SafeAreaView, Image, StatusBar, FlatList } from 'react-native';
 
 const Details = () => {
   return (

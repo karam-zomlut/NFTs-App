@@ -56,7 +56,7 @@ const HomeHeader = ({ onSearch }) => {
         <Text
           style={{
             fontFamily: FONTS.regular,
-            fontSize: SIZES.small,
+            fontSize: SIZES.font,
             color: COLORS.white,
           }}
         >

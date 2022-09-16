@@ -17,7 +17,9 @@ import {
 
 import { COLORS, SIZES, SHADOWS, FONTS, assets } from '../constants';
 
-const Details = () => {
+const Details = ({ route, navigation }) => {
+  const { data } = route.params;
+  console.log(data);
   return <Text>Details</Text>;
 };
 

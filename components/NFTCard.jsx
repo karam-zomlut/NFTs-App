@@ -2,7 +2,7 @@ import { View, Text, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 import { COLORS, SIZES, SHADOWS, assets } from '../constants';
-import { CircleButton } from './Buttons';
+import { CircleButton, RectButton } from './Buttons';
 import { NFTTitle, EthPrice, SubInfo } from './SubInfo';
 
 const NFTCard = ({ data }) => {
@@ -45,6 +45,18 @@ const NFTCard = ({ data }) => {
           titleSize={SIZES.large}
           subTitleSize={SIZES.small}
         />
+
+        <View
+          style={{
+            marginTop: SIZES.font,
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+          }}
+        >
+          <EthPrice price={data?.price} />
+          <RectButton />
+        </View>
       </View>
     </View>
   );

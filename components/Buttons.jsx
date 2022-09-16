@@ -30,10 +30,10 @@ export const CircleButton = ({ imgUrl, handlePress, ...props }) => {
   )
 }
 
-export const ReactButton = () => {
+export const RectButton = () => {
   return (
     <View>
-      <Text>React Button</Text>
+      <Text>Rect Button</Text>
     </View>
   )
 }
